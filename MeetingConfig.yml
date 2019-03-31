@@ -1,6 +1,13 @@
 spring:
   application:
     name: eurekaClient
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/richard889/MeetingConfig
+          username: richard889
+          password: jack0816    
 eureka:
   client:
     service-url:
