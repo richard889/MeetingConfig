@@ -22,7 +22,7 @@ spring:
         git:
           uri: https://github.com/richard889/MeetingConfig
           username: richard889
-          password: jack0816    
+          password: jack0816
   rabbitmq:
     host: localhost
     port: 5672
@@ -32,7 +32,5 @@ eureka:
   instance:
     hostname: localhost
   client:
-    register-with-eureka: false
-    fetch-registry: false
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
