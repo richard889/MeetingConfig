@@ -7,4 +7,8 @@ spring:
         git:
           uri: https://github.com/richard889/MeetingConfig
           username: richard889
-          password: jack0816      
+          password: jack0816
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/      
