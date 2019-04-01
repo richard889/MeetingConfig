@@ -1,36 +1,10 @@
-server:
-  port: 8761
 spring:
   application:
-    name: eurekaServer
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/meetingdb?serverTimezone=GMT&characterEncoding=utf-8
-    username: root
-    password: root
-  jpa:
-    hibernate:
-      ddl-auto: update
-      naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-    show-sql: true
-  jackson:
-    date-format: yyyy/MM/dd HH:mm:ss
-    time-zone: UTC
+    name: eurekaClient
   cloud:
     config:
       server:
         git:
           uri: https://github.com/richard889/MeetingConfig
           username: richard889
-          password: jack0816
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+          password: jack0816      
